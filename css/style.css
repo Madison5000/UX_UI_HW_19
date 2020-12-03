@@ -1,0 +1,210 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    height: 100px;
+    width: 20%;
+    padding: 1%;
+    text-align: left;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+}
+nav {
+    float: right;
+    width: 73%;
+    padding: 1%;
+    height: 100px;
+}
+ul {
+
+    width: 25%;
+    margin-left: auto;
+    float: right;
+    font-family: Inconsolata;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.heroImg {
+    padding-top: 100px;
+    height: 700px;
+    padding: 25px;
+}
+
+footer {
+    
+    padding: 10px;
+    align-content: flex-end;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+li {
+    padding: 1%;
+}
+
+#headshot {
+    width: auto;
+    height: 700px;
+    object-fit: contain;
+    align-content: flex-start;
+}
+.column {
+    float: left;
+  width: 40%;
+}
+
+.about  {
+   font-family: 'Inconsolata';
+   font-size: 24px;
+   margin-left: 1%;
+   align-content: flex-start;
+   margin-top: -5vh;
+}
+
+h1 {
+    font-family: Inconsolata;
+    font-size: 96px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: top;
+    line-height: 90px;
+    margin-bottom: 1px;
+    color: #373738;
+}
+
+h3 {
+    font-family: Inconsolata;
+    font-size: 36px;
+    font-weight: 100;
+    color: #373738;
+    vertical-align: top;
+    margin-top: 0%;
+}
+
+#mySkills {
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+.flexItem1 {
+    width: 300px;
+    height: 700px;
+    padding: 20px;
+    margin-top: 5vh;
+    align-items: flex-start;
+    font-family: Inconsolata;
+}
+.flexItem1 p {
+    height: 100px;
+}
+
+.flexItem1 img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexItem1 h3 {
+    font-weight: 500;
+}
+
+.workGrid {
+    display: grid;
+    min-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    margin: 4vh auto;
+    width: 40%;
+    font-family: Inconsolata;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "workImage1 workInfo1"
+    "workImage2 workInfo2"
+    ;
+}
+
+#workImage1 {
+    grid-area: workImage1;
+}
+
+#workImage1 img {
+    width: 300px;
+    padding-bottom: 20px;
+    margin-bottom: 2vh;
+}
+
+#workInfo1 {
+    grid-area: workInfo1;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#workImage2 {
+    grid-area: workImage2;
+}
+
+#workImage2 img {
+    width: 300px;
+}
+
+#workInfo2 {
+    grid-area: workInfo2;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.myWork h1 {
+    text-align: center;
+}
+
+.myWork h4 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.myWork h3 {
+    text-align: center;
+    text-decoration: underline solid 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
+button {
+    background-color: #373738;
+    font-family: Inconsolata;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: .5em 2em;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 2vh;
+}
+@media only screen and (max-width: 600px) {
+    .flexItem1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workImage1"
+        "workInfo1"
+        "workImage2"
+        "workInfo2";
+    }
+}
