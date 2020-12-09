@@ -70,19 +70,21 @@ html, body {
   }
 
 .topDog {
-    width: 100vw;
+  height: 100vh;  
+  width: 100vw;
     padding-top: 200px !important;
     margin-right: 0 !important;
 }
 
 .topDogimg {
-    height: 100vh;
     width: auto;
 }
 
 .mads {
-    padding-right: 0 !important;
+  justify-content: flex-end !important;  
+  padding-right: 0 !important;
     text-align: right !important;
+    z-index: 50;
 }
   .jumbotron {
     background-color: rgba(0, 0, 0, 0) !important;
@@ -103,15 +105,16 @@ html, body {
   }
 
 .display-4 {
-    font-size: 20rem !important;
+    font-size: 20vw !important;
     font-weight: 700 !important;
     line-height: 0.7em !important;
     text-align: left;
+    z-index: 1;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 1000px) {
     .display-4 {
-        font-size: 10rem !important;
+        font-size: 8rem !important;
     }
 }
 
